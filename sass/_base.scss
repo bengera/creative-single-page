@@ -1,4 +1,7 @@
-$color-black: #151515;
+$color-red: #F94F4F;
+$color-bg-black: #191921;
+$color-white: #FFF;
+$color-text-black: #000;
 
 
 $font-primary: 'Commissioner',
@@ -35,11 +38,30 @@ body {
     line-height: 26px;
     margin: 0 auto;
     overflow-x: hidden;
-    // font-family: $font-primary;
-    // background-color: $color-black;
-    // color: $color-grey;
-
-
-
-
+    font-family: $font-primary;
+   
 }
+
+.h1 {
+    font-size: 80px;
+    line-height: 88px;
+}
+
+.h2 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.h3 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.regular {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+
+
