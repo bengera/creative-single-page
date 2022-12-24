@@ -1,0 +1,45 @@
+$color-black: #151515;
+
+
+$font-primary: 'Commissioner',
+serif;
+
+$bp-tablet : 37.5em; //600
+$bp-desktop : 62.5em; //1000
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+$bp-tablet : 37.5em; //600
+$bp-desktop : 62.5em; //1000
+
+html {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+
+}
+
+body {
+
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    // font-family: $font-primary;
+    // background-color: $color-black;
+    // color: $color-grey;
+
+
+
+
+}
