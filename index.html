@@ -8,12 +8,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/nav.js"></script>
   
   <title>Frontend Mentor | Creative single page site</title>
 </head>
 <body>
-  <h1>Test Heading</h1>
-  About
+  
+  <div class="master-container">
+    <nav class="nav">
+      <div class="nav__left-content"><img src="./assets/desktop/logo.svg" alt="logo" class="nav__logo"></div>
+      <div class="nav__right-content">
+        <div class="nav__popout-box">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#" class="nav__list-link">About</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__list-link">Service</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__list-link">Projects</a></li>
+        </ul>
+        <button class="nav__cta">Schedule a Call</button>
+      </div>
+      <button class="hamburger-menu"></button>
+      </div>
+    </nav>
+  </div>
+  <!-- About
   Service
   Projects
 
@@ -61,6 +78,6 @@
 
   Let's build something great together.
 
-  Schedule a Call
+  Schedule a Call -->
 </body>
 </html>
