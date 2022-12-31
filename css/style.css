@@ -321,28 +321,157 @@ body {
   overflow-x: hidden;
   font-family: "Commissioner", serif; }
 
-main {
-  padding: 1rem; }
-
 .master-container {
   max-width: 1140px;
   margin: 0 auto; }
 
 .h1 {
-  font-size: 80px;
-  line-height: 88px; }
+  font-size: 40px;
+  line-height: 40px; }
+  @media only screen and (min-width: 37.5em) {
+    .h1 {
+      font-size: 80px;
+      line-height: 88px; } }
 
 .h2 {
-  font-size: 56px;
-  line-height: 64px; }
+  font-size: 32px;
+  line-height: 40px; }
 
 .h3 {
   font-size: 20px;
   line-height: 32px; }
 
-.regular {
+.body-text {
   font-size: 18px;
   line-height: 32px; }
+
+.header__hero-img,
+.info__hero-img,
+.guidelines__img {
+  display: block;
+  width: 100%; }
+
+.info__description-container {
+  position: relative;
+  background-color: #191921;
+  color: #FFF;
+  padding: 2rem;
+  padding-top: 58px;
+  height: 377px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+.info__hero-img {
+  display: block; }
+
+.info__wave {
+  color: #F94F4F;
+  font-size: 172px;
+  font-weight: 800;
+  position: absolute;
+  top: -30px; }
+
+.info__red-text {
+  color: #F94F4F; }
+
+.info__cta {
+  color: #F94F4F;
+  font-weight: 800;
+  text-decoration: none;
+  color: #F94F4F;
+  border-bottom: 2px solid #F94F4F;
+  max-width: 120px;
+  padding-bottom: 0.5rem;
+  cursor: pointer; }
+
+.steps {
+  background-color: #F94F4F;
+  color: #FFF;
+  padding: 2rem;
+  height: 918px; }
+  .steps__heading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem; }
+  .steps__heading {
+    margin-top: 50px; }
+  .steps__box-top-container {
+    position: relative; }
+  .steps__number {
+    position: absolute;
+    font-size: 80px;
+    font-weight: 800;
+    opacity: 0.3;
+    bottom: 17px; }
+  .steps__sub-heading {
+    padding-left: 1rem; }
+  .steps__description {
+    margin-top: 1rem; }
+
+.guidelines__picture-container {
+  position: relative; }
+
+.guidelines__caption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 800;
+  right: 20px;
+  bottom: 40px;
+  z-index: 1000; }
+
+.guidelines__caption-below {
+  font-weight: 400;
+  text-align: right; }
+
+.guidelines-overlay {
+  position: relative; }
+  .guidelines-overlay::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 342px;
+    bottom: 28px;
+    left: 0;
+    right: 0;
+    background: black;
+    filter: blur(50px); }
+
+.controls {
+  height: 272px;
+  background-color: #191921;
+  display: flex;
+  align-items: center; }
+  .controls__inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    justify-items: center;
+    gap: 2rem;
+    margin-left: 2rem; }
+  .controls__heading {
+    color: #FFF; }
+  .controls__buttons-container {
+    display: flex;
+    gap: 1rem; }
+  .controls__next-btn, .controls__prev-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: transparent; }
+
+.slide-container {
+  height: 404px; }
+
+.slide {
+  height: 404px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .nav {
   display: flex;
@@ -362,9 +491,9 @@ main {
     position: absolute;
     background-color: #191921;
     padding: 1.5rem;
-    right: 9px;
+    right: 2px;
     width: 252px;
-    top: 55px;
+    top: 69px;
     text-align: center;
     font-size: 18px; }
   .nav__popout-box.show {
@@ -390,7 +519,31 @@ main {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  background-position: center center; }
+  background-position: center center;
+  padding-top: 5px; }
 
 .hamburger-menu.active {
   background-image: url(../assets/mobile/icon-cross.svg); }
+
+.header {
+  margin-bottom: 96px; }
+  .header__left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 327px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 21.25em) {
+      .header__left-content {
+        font-size: 80px;
+        padding: 1rem; } }
+  .header__btn-cta {
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFF;
+    background-color: #F94F4F;
+    border: 0;
+    width: 177px;
+    height: 72px;
+    margin-top: 25px;
+    cursor: pointer; }

@@ -1,0 +1,39 @@
+.header {
+    margin-bottom: 96px;
+
+    &__right-content {}
+
+    &__left-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 327px;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $bp-340) {
+            font-size: 80px;
+            padding: 1rem;
+        }
+
+    }
+
+    &__hero-img {}
+
+    &__heading {}
+
+    &__description {}
+
+    &__btn-cta {
+        font-size: 18px;
+        font-weight: 800;
+        color: $color-white;
+        background-color: $color-red;
+        border: 0;
+        width: 177px;
+        height: 72px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+}
+
+
