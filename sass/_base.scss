@@ -103,9 +103,8 @@ main {
         position: relative;
         background-color: $color-bg-black;
         color: $color-white;
-        padding: 2rem;
-        padding-top: 58px;
-        height: 377px;
+        padding: 5rem 2rem;
+        padding-top: 72px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -150,8 +149,8 @@ main {
 .steps {
     background-color: $color-red;
     color: $color-white;
-    padding: 2rem;
-    height: 918px;
+    padding: 5rem 2rem;
+
 
     &__heading-container {
         display: flex;
@@ -278,14 +277,22 @@ main {
 }
 
 // SLIDER
-.slide-container {
+.slider {
+    position: relative;
     height: 404px;
+    overflow-x: hidden;
 }
 
 .slide {
-    
+    position: absolute;
     height: 404px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+}
+
+.slider-img {
+    display: block;
+    object-fit: cover;
+    width: 100vw;
+    height: 450px;
 }

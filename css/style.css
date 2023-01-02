@@ -355,9 +355,8 @@ body {
   position: relative;
   background-color: #191921;
   color: #FFF;
-  padding: 2rem;
-  padding-top: 58px;
-  height: 377px;
+  padding: 5rem 2rem;
+  padding-top: 72px;
   display: flex;
   flex-direction: column;
   gap: 2rem; }
@@ -388,8 +387,7 @@ body {
 .steps {
   background-color: #F94F4F;
   color: #FFF;
-  padding: 2rem;
-  height: 918px; }
+  padding: 5rem 2rem; }
   .steps__heading-container {
     display: flex;
     flex-direction: column;
@@ -464,14 +462,21 @@ body {
     cursor: pointer;
     background: transparent; }
 
-.slide-container {
-  height: 404px; }
+.slider {
+  position: relative;
+  height: 404px;
+  overflow-x: hidden; }
 
 .slide {
+  position: absolute;
   height: 404px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  width: 100%; }
+
+.slider-img {
+  display: block;
+  object-fit: cover;
+  width: 100vw;
+  height: 450px; }
 
 .nav {
   display: flex;
