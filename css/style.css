@@ -549,7 +549,7 @@ body {
     flex-direction: column;
     gap: 15px;
     max-width: 327px;
-    margin: 0 auto; }
+    margin: 3rem 2rem; }
     @media only screen and (max-width: 21.25em) {
       .header__left-content {
         font-size: 80px;
