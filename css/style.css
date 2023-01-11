@@ -330,8 +330,8 @@ body {
   line-height: 40px; }
   @media only screen and (min-width: 37.5em) {
     .h1 {
-      font-size: 80px;
-      line-height: 88px; } }
+      font-size: 56px;
+      line-height: 56px; } }
 
 .h2 {
   font-size: 32px;
@@ -495,6 +495,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .nav {
+      padding: 0; } }
+  @media only screen and (min-width: 37.5em) {
+    .nav__left-content {
+      margin: auto 0; } }
   .nav__right-content {
     position: relative; }
   .nav__list {
@@ -503,6 +509,12 @@ body {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 1.5rem; }
+    @media only screen and (min-width: 37.5em) {
+      .nav__list {
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+        margin: 0; } }
   .nav__popout-box {
     display: none;
     position: absolute;
@@ -513,6 +525,20 @@ body {
     top: 69px;
     text-align: center;
     font-size: 18px; }
+    @media only screen and (min-width: 37.5em) {
+      .nav__popout-box {
+        display: block;
+        background-color: #f94f4f;
+        width: 483px;
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static; } }
+  @media only screen and (min-width: 37.5em) {
+    .nav__popout-inner {
+      display: flex;
+      gap: 2rem; } }
   .nav__popout-box.show {
     display: block; }
   .nav__cta {
@@ -524,9 +550,16 @@ body {
     width: 199px;
     height: 64px;
     cursor: pointer; }
+    @media only screen and (min-width: 37.5em) {
+      .nav__cta {
+        background-color: #191921;
+        width: 147px; } }
   .nav__list-link {
     color: #fff;
     text-decoration: none; }
+  @media only screen and (min-width: 37.5em) {
+    .nav__logo {
+      margin-left: 2rem; } }
 
 .hamburger-menu {
   background-color: transparent;
@@ -538,22 +571,41 @@ body {
   height: 24px;
   background-position: center center;
   padding-top: 5px; }
+  @media only screen and (min-width: 37.5em) {
+    .hamburger-menu {
+      display: none; } }
 
 .hamburger-menu.active {
   background-image: url(../assets/mobile/icon-cross.svg); }
 
 .header {
   margin-bottom: 96px; }
+  @media only screen and (min-width: 37.5em) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      background-image: url(../assets/tablet/image-hero.jpg);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: contain; } }
   .header__left-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 327px;
     margin: 3rem 2rem; }
+    @media only screen and (min-width: 37.5em) {
+      .header__left-content {
+        text-align: left;
+        width: 500px;
+        max-width: none; } }
     @media only screen and (max-width: 21.25em) {
       .header__left-content {
         font-size: 80px;
         padding: 1rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .header__hero-img {
+      display: none; } }
   .header__btn-cta {
     font-size: 18px;
     font-weight: 800;

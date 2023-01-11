@@ -1,39 +1,58 @@
 .header {
-    margin-bottom: 96px;
+  margin-bottom: 96px;
 
-    &__right-content {}
+  @media only screen and (min-width: $bp-tablet) {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../assets/tablet/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
 
-    &__left-content {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        max-width: 327px;
-        margin: 3rem 2rem;
+  &__right-content {
+  }
 
-        @media only screen and (max-width: $bp-340) {
-            font-size: 80px;
-            padding: 1rem;
-        }
+  &__left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 327px;
+    margin: 3rem 2rem;
 
+    @media only screen and (min-width: $bp-tablet) {
+      text-align: left;
+      width: 500px;
+      max-width: none;
     }
 
-    &__hero-img {}
-
-    &__heading {}
-
-    &__description {}
-
-    &__btn-cta {
-        font-size: 18px;
-        font-weight: 800;
-        color: $color-white;
-        background-color: $color-red;
-        border: 0;
-        width: 177px;
-        height: 72px;
-        margin-top: 25px;
-        cursor: pointer;
+    @media only screen and (max-width: $bp-340) {
+      font-size: 80px;
+      padding: 1rem;
     }
+  }
+
+  &__hero-img {
+    @media only screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__heading {
+  }
+
+  &__description {
+  }
+
+  &__btn-cta {
+    font-size: 18px;
+    font-weight: 800;
+    color: $color-white;
+    background-color: $color-red;
+    border: 0;
+    width: 177px;
+    height: 72px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
 }
-
-
