@@ -5,13 +5,12 @@
   padding: 2rem;
 
   @media only screen and (min-width: $bp-tablet) {
-       padding: 0;     
+    padding: 0;
   }
 
   &__left-content {
     @media only screen and (min-width: $bp-tablet) {
       margin: auto 0;
-      
     }
   }
 
@@ -54,7 +53,13 @@
       justify-content: center;
       align-items: center;
       position: static;
-      margin-lefT: 1rem;
+      margin-left: 1rem;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      width: 705px;
+      padding: 4rem 4rem 4rem 5rem;
+      justify-content: flex-start;
     }
   }
 
@@ -83,6 +88,13 @@
       background-color: #191921;
       width: 147px;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+      width: 199px;
+      &:hover {
+        background-color: #434356;
+      }
+    }
   }
 
   &__item {
@@ -95,10 +107,8 @@
 
   &__logo {
     @media only screen and (min-width: $bp-tablet) {
-        margin-left: 2rem;   
-        
+      margin-left: 2rem;
     }
-    
   }
 }
 
@@ -121,3 +131,11 @@
 .hamburger-menu.active {
   background-image: url(../assets/mobile/icon-cross.svg);
 }
+
+
+svg:hover circle,
+svg:hover path{
+  stroke: #FF9393;
+  
+}
+
