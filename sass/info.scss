@@ -12,8 +12,7 @@
     }
   }
 
-  &__top-img {
-  }
+  &
 
   &__description-container {
     position: relative;
@@ -117,9 +116,7 @@
     flex-direction: column;
     gap: 5rem;
 
-    @media only screen and (min-width: $bp-tablet) {
-      //   grid-column: 3/3;
-    }
+    
   }
 
   &__heading-container {
@@ -137,8 +134,7 @@
     position: relative;
   }
 
-  &__box {
-  }
+  
 
   &__number {
     position: absolute;
@@ -189,9 +185,7 @@
     text-align: right;
   }
 
-  &__img {
-    // filter: brightness(50%);
-  }
+  
 }
 
 // GUIDELINES
