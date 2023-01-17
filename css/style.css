@@ -541,6 +541,9 @@ svg:hover path {
       grid-column: 6/-1;
       padding: 9rem 5rem 2rem 6rem;
       height: auto; } }
+  @media only screen and (min-width: 62.5em) {
+    .info .info__description-container {
+      padding: 8rem 8rem 15rem 6rem; } }
 
 .info__hero-img {
   display: block; }

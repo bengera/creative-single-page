@@ -30,6 +30,14 @@
       padding: 9rem 5rem 2rem 6rem;
       height: auto;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+      
+      padding: 8rem 8rem 15rem 6rem;
+      
+    }
+
+    
   }
 
   &__hero-img {
