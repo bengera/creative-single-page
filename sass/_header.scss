@@ -12,6 +12,8 @@
   }
 
   @media only screen and (min-width: $bp-desktop) {
+    display: grid;
+    grid-template-columns: minmax(1.5rem, 1fr) repeat(8, minmax(1rem, 16.8rem)) minmax(1.5rem,1fr);
     background-image: url(../assets/desktop/image-hero.jpg);  
   }
 
@@ -31,6 +33,10 @@
       width: 500px;
       max-width: none;
       margin: 8rem 2rem;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      grid-column: 3/4;
     }
 
     @media only screen and (max-width: $bp-340) {

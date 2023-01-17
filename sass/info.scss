@@ -12,7 +12,17 @@
     }
   }
 
-  &__top-img {
+  &__description {
+    @media only screen and (min-width: $bp-desktop) {
+      max-width: 445px;
+    }
+   
+  }
+
+  &__description-heading {
+    @media only screen and (min-width: $bp-desktop) {
+      max-width: 410px;
+    }
   }
 
   &__description-container {
@@ -29,7 +39,7 @@
       grid-row: 1;
       grid-column: 6/-1;
       padding: 9rem 5rem 2rem 6rem;
-      height: 538px;
+      // height: 538px;
     }
   }
 
@@ -118,7 +128,7 @@
     gap: 5rem;
 
     @media only screen and (min-width: $bp-tablet) {
-      //   grid-column: 3/3;
+      max-width: 504px;
     }
   }
 
@@ -154,6 +164,7 @@
 
   &__description {
     margin-top: 1rem;
+    
   }
 }
 

@@ -8,14 +8,28 @@
     padding: 0;
   }
 
+  @media only screen and (min-width: $bp-desktop) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(1.5rem, 1fr) repeat(8, minmax(1rem, 16.8rem)) minmax(
+        1.5rem,
+        1fr
+      );
+  }
+
   &__left-content {
     @media only screen and (min-width: $bp-tablet) {
       margin: auto 0;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      grid-column: 3/4;
     }
   }
 
   &__right-content {
     position: relative;
+    grid-column: 5/-1;
   }
 
   &__list {
@@ -57,7 +71,7 @@
     }
 
     @media only screen and (min-width: $bp-desktop) {
-      width: 705px;
+      width: 100%;
       padding: 4rem 4rem 4rem 5rem;
       justify-content: flex-start;
     }
@@ -109,6 +123,8 @@
     @media only screen and (min-width: $bp-tablet) {
       margin-left: 2rem;
     }
+
+    
   }
 }
 
@@ -132,10 +148,7 @@
   background-image: url(../assets/mobile/icon-cross.svg);
 }
 
-
 svg:hover circle,
-svg:hover path{
-  stroke: #FF9393;
-  
+svg:hover path {
+  stroke: #ff9393;
 }
-
