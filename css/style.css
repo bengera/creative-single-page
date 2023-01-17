@@ -540,7 +540,7 @@ svg:hover path {
       grid-row: 1;
       grid-column: 6/-1;
       padding: 9rem 5rem 2rem 6rem;
-      height: 538px; } }
+      height: auto; } }
 
 .info__hero-img {
   display: block; }
